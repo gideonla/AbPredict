@@ -1,0 +1,5 @@
+sed -i '1d' *_0001
+num_of_files=`ls *_0001 |wc -l`
+for i in `seq 1 $num_of_files`; do rm `cat "$i"_* |sed "s/ /_/g"`; done
+ls *0001|sort -nk1| cut -f 2- -d "_" |head -3 >top_models
+

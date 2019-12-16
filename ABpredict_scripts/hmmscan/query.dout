@@ -1,0 +1,23 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+kappa_cdhit_cut      -            106 query_heavy_light    -            428   1.7e-75  237.9   7.5   1   3   3.5e-49   3.5e-49  153.3   0.7     1   106     2   105     2   105 0.98 -
+kappa_cdhit_cut      -            106 query_heavy_light    -            428   1.7e-75  237.9   7.5   2   3      0.33      0.33   -0.9   0.1    65    93   171   199   146   205 0.73 -
+kappa_cdhit_cut      -            106 query_heavy_light    -            428   1.7e-75  237.9   7.5   3   3   8.4e-29   8.4e-29   87.8   0.1     1   106   216   328   216   328 0.93 -
+heavy_cdhit_cut      -            120 query_heavy_light    -            428   6.9e-68  214.2  10.5   1   4   1.3e-14   1.3e-14   42.3   0.2    10   116    11   103     1   107 0.80 -
+heavy_cdhit_cut      -            120 query_heavy_light    -            428   6.9e-68  214.2  10.5   2   4      0.17      0.17   -0.1   0.3    20    79   132   190   121   203 0.68 -
+heavy_cdhit_cut      -            120 query_heavy_light    -            428   6.9e-68  214.2  10.5   3   4   2.1e-56   2.1e-56  177.1   0.1     1   120   215   330   215   330 0.98 -
+heavy_cdhit_cut      -            120 query_heavy_light    -            428   6.9e-68  214.2  10.5   4   4      0.79      0.79   -2.2   0.0    13    36   349   372   345   380 0.82 -
+lambda_cdhit_cut     -            106 query_heavy_light    -            428   6.4e-52  162.2   8.1   1   3   1.6e-36   1.6e-36  112.8   0.8     4   105     5   104     2   105 0.95 -
+lambda_cdhit_cut     -            106 query_heavy_light    -            428   6.4e-52  162.2   8.1   2   3     0.044     0.044    2.0   0.1    66    95   171   200   144   207 0.79 -
+lambda_cdhit_cut     -            106 query_heavy_light    -            428   6.4e-52  162.2   8.1   3   3     4e-17     4e-17   50.4   0.1     3   106   217   328   215   328 0.85 -
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      ./sequences/query.fa
+# Target file:     /home/labs/fleishman/gideonla/ABpredict/test_cut_length/ChainExtract/database/igg-chains_cdhit.hmm
+# Option settings: hmmscan -o ./hmmscan/query.out --domtblout ./hmmscan/query.dout /home/labs/fleishman/gideonla/ABpredict/test_cut_length/ChainExtract/database/igg-chains_cdhit.hmm ./sequences/query.fa 
+# Current dir:     /home/labs/fleishman/gideonla/ABpredict/test_cut_length/ChainExtract/test
+# Date:            Fri Dec 29 18:32:43 2017
+# [ok]

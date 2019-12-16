@@ -1,0 +1,27 @@
+-database /home/labs/fleishman/WebServer/ABPREDICT/database
+#-constant_seed 1
+#-out:pdb_gz 1
+-nodelay
+-jd2:ntrials 1
+-overwrite
+-out:file:fullatom
+-pdb_comments true 
+
+-s /home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/required_eden_Rosetta_files/2BRR.ppk_ideal.pdb
+-parser:protocol /home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/required_eden_Rosetta_files/AbPredict_xsd.xml
+-parser:script_vars template_pdb=/home/labs/fleishman/gideonla/new_SpliceOutAntibody/2BRR.ppk_ideal.pdb 
+
+
+-parser:script_vars H1_H2.db=/home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/AB_db_files/H1_H2.db H3.db=/home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/AB_db_files/H3.db L3.db=/home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/AB_db_files/L3.db L1_L2.db=/home/labs/fleishman/WebServer/ABPREDICT/ABpredict_scripts/AB_db_files/L1_L2.db
+-out:path:pdb pdb/
+-mute protocols.toolbox.task_operations.SeqprofConsensusOperation
+-mute protocols.toolbox.task_operations.RestrictToAlignedSegmentsOperation
+
+-mute core.chemical.GlobalResidueTypeSet
+-mute devel.splice.Splice_constraints
+#@seq_flag
+-mute all
+
+
+
+

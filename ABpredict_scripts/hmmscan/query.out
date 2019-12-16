@@ -1,0 +1,154 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ./sequences/query.fa
+# target HMM database:             /home/labs/fleishman/gideonla/ABpredict/test_cut_length/ChainExtract/database/igg-chains_cdhit.hmm
+# output directed to file:         ./hmmscan/query.out
+# per-dom hits tabular output:     ./hmmscan/query.dout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query_heavy_light  [L=428]
+Description: 1AHW
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    1.7e-75  237.9   7.5    3.5e-49  153.3   0.7    2.9  3  kappa_cdhit_cut   
+    6.9e-68  214.2  10.5    2.1e-56  177.1   0.1    3.4  4  heavy_cdhit_cut   
+    6.4e-52  162.2   8.1    1.6e-36  112.8   0.8    3.4  3  lambda_cdhit_cut  
+
+
+Domain annotation for each model (and alignments):
+>> kappa_cdhit_cut  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.3   0.7   3.5e-49   3.5e-49       1     106 []       2     105 ..       2     105 .. 0.98
+   2 ?   -0.9   0.1      0.33      0.33      65      93 ..     171     199 ..     146     205 .. 0.73
+   3 !   87.8   0.1   8.4e-29   8.4e-29       1     106 []     216     328 ..     216     328 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 153.3 bits;  conditional E-value: 3.5e-49
+    kappa_cdhit_cut   1 ivltqspsslsvsvGervtisCrasqsilssylaWyqqkpgqspklliykasklasgvpsrfsgsgsgtdftLtissleaeDlavYyCqqss 92 
+                        i++tqspss+ +s+Gervti+C+asq+i ++yl+Wyqqkp +spk+liy+a++la+gvpsrfsgsgsg+d++Ltissle++D+a+YyC q+ 
+  query_heavy_light   2 IKMTQSPSSMYASLGERVTITCKASQDI-RKYLNWYQQKPWKSPKTLIYYATSLADGVPSRFSGSGSGQDYSLTISSLESDDTATYYCLQHG 92 
+                        79*************************9.9*************************************************************9 PP
+
+    kappa_cdhit_cut  93 esalltfGqGTkle 106
+                        es ++tfG+GTkle
+  query_heavy_light  93 ES-PYTFGGGTKLE 105
+                        85.7********97 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.33
+    kappa_cdhit_cut  65 sgsgtdftLtissleaeDlavYyCqqsse 93 
+                        s  + + tLt+++ e e    Y C+ +++
+  query_heavy_light 171 STYSMSSTLTLTKDEYERHNSYTCEATHK 199
+                        44556778899999999999999987765 PP
+
+  == domain 3  score: 87.8 bits;  conditional E-value: 8.4e-29
+    kappa_cdhit_cut   1 ivltqspsslsvsvGervtisCrasqsil.ssylaWyqqkpgqspklliykask.....lasgvpsrfsgsg..sgtdftLtissleaeDla 84 
+                        i+l q+++++ v++G  v++sC+as+  + ++y++W++q+p+q+++++  +  +     ++ +++++ s+++  s+++++L++ssl++eD+a
+  query_heavy_light 216 IQL-QQSGAELVRPGALVKLSCKASGFNIkDYYMHWVKQRPEQGLEWIGLIDPEngntiYDPKFQGKASITAdtSSNTAYLQLSSLTSEDTA 306
+                        678.99999*****************98889*****************99988877888889999999998888999*************** PP
+
+    kappa_cdhit_cut  85 vYyCqqssesalltfGqGTkle 106
+                        vYyC++ ++++++++GqGT+l+
+  query_heavy_light 307 VYYCARDNSYYFDYWGQGTTLT 328
+                        *******************985 PP
+
+>> heavy_cdhit_cut  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.2   1.3e-14   1.3e-14      10     116 ..      11     103 ..       1     107 [. 0.80
+   2 ?   -0.1   0.3      0.17      0.17      20      79 ..     132     190 ..     121     203 .. 0.68
+   3 !  177.1   0.1   2.1e-56   2.1e-56       1     120 []     215     330 ..     215     330 .. 0.98
+   4 ?   -2.2   0.0      0.79      0.79      13      36 ..     349     372 ..     345     380 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 1.3e-14
+    heavy_cdhit_cut  10 elvkpgeslklsCkasgftfssyaisWvrqapgkglewvgaispksgstkyaeslkgrvtisrdkskntaylqlssltseDtAvYyCarekk 101
+                           + ge ++++Ckas++   +++++W++q+p k+ + + +       t+ a+ + +r++ s   s + ++l++ssl+s+DtA+YyC ++++
+  query_heavy_light  11 MYASLGERVTITCKASQD--IRKYLNWYQQKPWKSPKTLIYYA-----TSLADGVPSRFSGS--GSGQDYSLTISSLESDDTATYYCLQHGE 93 
+                        445679**********98..46789************987766.....5789******9885..6778999*****************9987 PP
+
+    heavy_cdhit_cut 102 eekeaafdvWGqGtl 116
+                        + +     ++G Gt+
+  query_heavy_light  94 SPY-----TFGGGTK 103
+                        542.....4566665 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.17
+    heavy_cdhit_cut  20 lsCkasgftfssyaisWvrqapgkglewvgaispksgstkyaeslkgrvtisrdksknta 79 
+                        + C   +f  ++  ++W     +++   + + +  ++s++ + s+ + +t+++d+ +++ 
+  query_heavy_light 132 VVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTD-QDSKDSTYSMSSTLTLTKDEYERHN 190
+                        5677777777777777777666666666665554.4567777788999999999876654 PP
+
+  == domain 3  score: 177.1 bits;  conditional E-value: 2.1e-56
+    heavy_cdhit_cut   1 evqlvesgaelvkpgeslklsCkasgftfssyaisWvrqapgkglewvgaispksgstkyaeslkgrvtisrdkskntaylqlssltseDtA 92 
+                        e+ql++sgaelv+pg+ +klsCkasgf++++y+++Wv+q+p++glew+g i+p++g+t y+++++g+++i++d+s+ntaylqlssltseDtA
+  query_heavy_light 215 EIQLQQSGAELVRPGALVKLSCKASGFNIKDYYMHWVKQRPEQGLEWIGLIDPENGNTIYDPKFQGKASITADTSSNTAYLQLSSLTSEDTA 306
+                        68****************************************************************************************** PP
+
+    heavy_cdhit_cut  93 vYyCarekkeekeaafdvWGqGtlvtVs 120
+                        vYyCar+++    ++fd+WGqGt++tVs
+  query_heavy_light 307 VYYCARDNS----YYFDYWGQGTTLTVS 330
+                        *******85....79************8 PP
+
+  == domain 4  score: -2.2 bits;  conditional E-value: 0.79
+    heavy_cdhit_cut  13 kpgeslklsCkasgftfssyaisW 36 
+                        +  + ++l C + g+  + ++++W
+  query_heavy_light 349 QTNSMVTLGCLVKGYFPEPVTVTW 372
+                        667889999**9999888888888 PP
+
+>> lambda_cdhit_cut  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  112.8   0.8   1.6e-36   1.6e-36       4     105 ..       5     104 ..       2     105 .. 0.95
+   2 ?    2.0   0.1     0.044     0.044      66      95 ..     171     200 ..     144     207 .. 0.79
+   3 !   50.4   0.1     4e-17     4e-17       3     106 .]     217     328 ..     215     328 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 112.8 bits;  conditional E-value: 1.6e-36
+   lambda_cdhit_cut   4 ltqppsvsvspGqtvtisCsgsssevgskyvsWyqqkpgkapklliyeknkrpsgvpdrfsgsksgntasLtisglqaeDeadYyCaswdss 95 
+                         ++p+s+ +s+G++vti+C++s+    +ky++Wyqqkp k+pk+liy +++ ++gvp+rfsgs sg++ sLtis+l+++D a+YyC ++ +s
+  query_heavy_light   5 TQSPSSMYASLGERVTITCKASQDI--RKYLNWYQQKPWKSPKTLIYYATSLADGVPSRFSGSGSGQDYSLTISSLESDDTATYYCLQHGES 94 
+                        45678999*************9988..9**************************************************************** PP
+
+   lambda_cdhit_cut  96 avvfGgGtkl 105
+                         ++fGgGtkl
+  query_heavy_light  95 PYTFGGGTKL 104
+                        *********9 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.044
+   lambda_cdhit_cut  66 sksgntasLtisglqaeDeadYyCaswdss 95 
+                        s+ + +++Lt+++ + e + +Y C++++++
+  query_heavy_light 171 STYSMSSTLTLTKDEYERHNSYTCEATHKT 200
+                        55677899****************998776 PP
+
+  == domain 3  score: 50.4 bits;  conditional E-value: 4e-17
+   lambda_cdhit_cut   3 vltqppsvsvspGqtvtisCsgsssevgskyvsWyqqkpgkapklliyeknkrpsgvpd.rfsgsk......sgntasLtisglqaeDeadY 87 
+                        +l+q+ +  v pG+ v++sC++s  +++++y++W++q+p++  + +   + +  + + d +f g        s+nta+L +s+l +eD a Y
+  query_heavy_light 217 QLQQSGAELVRPGALVKLSCKASGFNIKDYYMHWVKQRPEQGLEWIGLIDPENGNTIYDpKFQGKAsitadtSSNTAYLQLSSLTSEDTAVY 308
+                        56777777889*******************************99987777666666654489887655666699****************** PP
+
+   lambda_cdhit_cut  88 yCaswdss.avvfGgGtklt 106
+                        yCa  +s     +G+Gt+lt
+  query_heavy_light 309 YCARDNSYyFDYWGQGTTLT 328
+                        ***9999977789****997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (428 residues searched)
+Target model(s):                           3  (332 nodes)
+Passed MSV filter:                         3  (1); expected 0.1 (0.02)
+Passed bias filter:                        3  (1); expected 0.1 (0.02)
+Passed Vit filter:                         3  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         3  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  3  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14.21
+//
+[ok]

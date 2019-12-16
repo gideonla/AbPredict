@@ -1,0 +1,4 @@
+grep -v "Model" CDR_CO_rms/* |sort -nk2 >cdr_co_rms
+echo "Model_name Energy whole_vl_vh  L1 L2 L3 H1 H2 H3 " >tmp
+cat tmp cdr_co_rms>tmp2
+mv tmp2 cdr_co_rms
